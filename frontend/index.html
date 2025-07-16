@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Shop UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sweet Shop Management</h1>
+
+    <form id="addSweetForm">
+  <input type="number" id="id" placeholder="ID" required />
+  <input type="text" id="name" placeholder="Name" required />
+  <input type="text" id="category" placeholder="Category" required />
+  <input type="number" id="price" placeholder="Price" required />
+  <input type="number" id="quantity" placeholder="Quantity" required />
+  <button type="submit">Add Sweet</button>
+</form>
+
+
+    <div class="filters">
+      <input type="text" id="searchName" placeholder="Search by name" />
+      <input type="text" id="searchCategory" placeholder="Search by category" />
+      <input type="number" id="minPrice" placeholder="Min Price" />
+      <input type="number" id="maxPrice" placeholder="Max Price" />
+      <button id="searchBtn">Search</button>
+      <button id="sortPrice">Sort by Price</button>
+    </div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="sweetTableBody"></tbody>
+</table>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
